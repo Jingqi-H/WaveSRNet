@@ -1,5 +1,7 @@
 # WaveSRNet
 
+paper: Wavelet-based Selection-and-Recalibration Network for Parkinson's Disease Screening in OCT Images
+
 ## Dataset
 
 [SD-OCT](http://www.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm): Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images
