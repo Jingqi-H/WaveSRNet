@@ -98,7 +98,7 @@ class Custom_wave(nn.Module):
         y_after = F.relu(y_before - Q)
         y = torch.sum(y_after, dim=1)
 
-        return y, A1, ori_y, y_after, torch.stack([LL, LH, HL, HH], dim=0)  ###torch.Size([64, 256])
+        return y, A1, ori_y, y_after, torch.stack([LL, LH, HL, HH], dim=0)
 
 
 class Waveletatt(nn.Module):
