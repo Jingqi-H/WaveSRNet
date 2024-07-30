@@ -2,13 +2,20 @@ Paper: Wavelet-based Selection-and-Recalibration Network for Parkinson's Disease
 
 
 
-## Dataset
+## Data Availability
 
-[SD-OCT](http://www.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm): Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images
+**1. Two public OCT datasets:**
 
-[UCSD](https://data.mendeley.com/datasets/rscbjbr9sj/2?__hstc=25856994.050094848ba039343e49229a8108ceb1.1715736860812.1715736860812.1715736860812.1&__hssc=25856994.1.1715736860812&__hsfp=1392219453): Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning
+Download from the link provided below:
 
-PD-OCT:  The PD-OCT dataset is confidential due to laboratory policies and confidentiality agreements, which can be accessed by contacting the corresponding author upon reasonable request.
+The SD-OCT dataset is released in the paper titled "Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images".  [Available link](http://www.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm)
+
+The UCSDdataset is released in the paper titled "Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning". [Available link](https://data.mendeley.com/datasets/rscbjbr9sj/2?__hstc=25856994.050094848ba039343e49229a8108ceb1.1715736860812.1715736860812.1715736860812.1&__hssc=25856994.1.1715736860812&__hsfp=1392219453)
+
+
+**2. The private PD-OCT dataset**
+
+The PD-OCT dataset is confidential due to laboratory policies and confidentiality agreements, which can be accessed by contacting the corresponding author (J. Liu: liuj@sustech.edu.cn) upon reasonable request.
 
 
 
@@ -27,7 +34,7 @@ nohup python main_kf_rebuttal.py --modelname wavesrnet --version 20240510R1.1 --
 
 1. SD-OCT dataset:
 
-   we need to split data first: `./dataloaders/OCT_AMD_new_csv.py`
+   We need to split data first: `./dataloaders/OCT_AMD_new_csv.py`
 
 ```
 nohup python main.py --modelname dwan --version 20230802R1 --gpu_ids 2 --batch_size 64 --num_epochs 100 --patience 10 --val_bs 1 --root ./dataloaders --dataset_factory OCT_AMD_R1 --num_classes 3 --public_data >./checkpoints/logs/oh_20230802R1_OCTAMDR1_dwan.log
@@ -46,8 +53,6 @@ nohup python main.py --modelname wavesrnet --version 20240123R1 --gpu_ids 6 --ba
 ```
 nohup python main.py --modelname wavesrnet --version 20240123R2 --gpu_ids 6 --batch_size 64 --num_epochs 100 --patience 1 --val_bs 2 --root /data1/hjq/data/University/Parkinsonism/oriR2 --dataset_factory disk12data1_oriR2_split_fileR1 >./checkpoints/logs/oh_20240123R2_oriR2_split_fileR1_wavesrnet.log
 ```
-
-
 
 
 
