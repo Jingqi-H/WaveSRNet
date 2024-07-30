@@ -8,9 +8,11 @@ Paper: Wavelet-based Selection-and-Recalibration Network for Parkinson's Disease
 
 Download from the link provided below:
 
-The SD-OCT dataset is released in the paper titled "Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images".  [Available link](http://www.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm)
+- The SD-OCT dataset is released in the paper titled "Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images".  
+[Available link](http://www.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm)
 
-The UCSDdataset is released in the paper titled "Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning". [Available link](https://data.mendeley.com/datasets/rscbjbr9sj/2?__hstc=25856994.050094848ba039343e49229a8108ceb1.1715736860812.1715736860812.1715736860812.1&__hssc=25856994.1.1715736860812&__hsfp=1392219453)
+- The UCSDdataset is released in the paper titled "Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning". 
+[Available link](https://data.mendeley.com/datasets/rscbjbr9sj/2?__hstc=25856994.050094848ba039343e49229a8108ceb1.1715736860812.1715736860812.1715736860812.1&__hssc=25856994.1.1715736860812&__hsfp=1392219453)
 
 
 **2. The private PD-OCT dataset**
